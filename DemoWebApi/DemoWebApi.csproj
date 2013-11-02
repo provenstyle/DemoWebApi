@@ -54,9 +54,6 @@
     <Reference Include="Common.Logging">
       <HintPath>..\packages\Common.Logging.2.1.2\lib\net40\Common.Logging.dll</HintPath>
     </Reference>
-    <Reference Include="EntityFramework">
-      <HintPath>..\packages\EntityFramework.5.0.0\lib\net45\EntityFramework.dll</HintPath>
-    </Reference>
     <Reference Include="Highway.Data">
       <HintPath>..\packages\Highway.Data.4.1.0.2\lib\net40\Highway.Data.dll</HintPath>
     </Reference>
@@ -146,15 +143,10 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="App_Start\ControllerFactoryWireup.cs" />
-    <Compile Include="App_Start\DatabaseInitializerWireup.cs" />
     <Compile Include="App_Start\FilterProvidersWireup.cs" />
     <Compile Include="App_Start\IoC.cs" />
     <Compile Include="App_Start\LoggerAnnouncementsWireup.cs" />
     <Compile Include="BaseTypes\BaseLoggingController.cs" />
-    <Compile Include="Config\HighwayContextConfiguration.cs" />
-    <Compile Include="Config\HighwayDatabaseInitializer.cs" />
-    <Compile Include="Config\HighwayDataContext.cs" />
-    <Compile Include="Config\HighwayMappings.cs" />
     <Compile Include="Controllers\PeopleController.cs" />
     <Compile Include="Filters\ExceptionLoggingFilter.cs" />
     <Compile Include="Global.asax.cs">

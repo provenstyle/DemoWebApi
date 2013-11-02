@@ -21,8 +21,6 @@ using Castle.Windsor;
 using Castle.MicroKernel.SubSystems.Configuration;
 using Highway.Data.EventManagement;
 using Highway.Data;
-using System.Data.Entity;
-using ProvenStyle.DemoWebApi.Config;
 using ProvenStyle.DemoWebApi.Data;
 
 namespace ProvenStyle.DemoWebApi.Installers
@@ -32,24 +30,7 @@ namespace ProvenStyle.DemoWebApi.Installers
     {
         public void Install(IWindsorContainer container, IConfigurationStore store)
         {
-            var manager = new DatabaseManager("DataLayer");
-
-            container.Register(
-                Component.For<IMappingConfiguration>().ImplementedBy<DataMappingConfiguration>().LifeStyle.Singleton,
-                Component.For<IDataContext>().ImplementedBy<DataContext>().DependsOn(new { connectionString = manager.ConnectionString }).LifeStyle.PerWebRequest,
-                Component.For<IRepository>().ImplementedBy<Repository>().LifeStyle.PerWebRequest,
-                Component.For<IRepositoryFactory>().ImplementedBy<RepositoryFactory>(),
-
-
-                Component.For<IEventManager>().ImplementedBy<EventManager>()
-                    .LifestyleSingleton(),
-                
-                Component.For<IDatabaseInitializer<HighwayDataContext>>().ImplementedBy<HighwayDatabaseInitializer>()
-                    .LifestyleSingleton(),
-                Component.For<IContextConfiguration>().ImplementedBy<HighwayContextConfiguration>()
-                    .LifestyleSingleton()
-            );
-
+            container.Install(new WebDataInstaller());
         }
     }
 }
