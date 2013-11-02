@@ -3,23 +3,17 @@
     public class Person
     {
         public int Id { get; set; }
-        public string FirstName { get; set; }
-        public string LastName { get; set; }
+        public string First { get; set; }
+        public string Last { get; set; }
 
         public Person()
         {
         }
-
-        public Person(int id, string firstName, string lastName)
-            :this(firstName,lastName)
+        
+        public Person(string first, string last)
         {
-            Id = id;
-        }
-
-        public Person(string firstName, string lastName)
-        {
-            FirstName = firstName;
-            LastName = lastName;
+            First = first;
+            Last = last;
         }
     }
 }

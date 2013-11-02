@@ -10,7 +10,7 @@ namespace ProvenStyle.DemoWebApi.Data
         public PeopleByFirstName(string firstName)
         {
             ContextQuery = context => context.AsQueryable<Person>()
-                .Where(x => x.FirstName == firstName);
+                .Where(x => x.First == firstName);
         }
     }
 }

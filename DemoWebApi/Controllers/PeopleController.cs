@@ -1,56 +1,75 @@
 ﻿using System.Collections.Generic;
+using System.Linq;
+using System.Net;
 using System.Web.Http;
 using ProvenStyle.DemoWebApi.Data;
+using ProvenStyle.DemoWebApi.Entities;
 
 namespace ProvenStyle.DemoWebApi.Controllers
 {
     public class PeopleController : ApiController
     {
-        private IRepositoryFactory _repositoryFactory;
+        private readonly IRepositoryFactory _repositoryFactory;
 
         public PeopleController(IRepositoryFactory repositoryFactory)
         {
             _repositoryFactory = repositoryFactory;
         }
 
-        // GET api/<controller>
         public IEnumerable<Person> Get()
         {
-            return new List<Person>
-                       {
-                           new Person{Id = 1, First = "Brenna", Last = "Dudley"},
-                           new Person{Id = 2, First = "Abigail", Last = "Dudley"},
-                           new Person{Id = 3, First = "Emma", Last = "Dudley"}
-                       };
+            List<Person> people = null;
+            _repositoryFactory.WithRepository(r =>
+            {
+                people = r.Find(new AllPeople()).ToList();
+            });
+
+            
+            return people;
         }
 
-        // GET api/<controller>/5
-        public string Get(int id)
+        public Person Get(int id)
         {
-            return "value";
+            Person person = null;
+            
+            _repositoryFactory.WithRepository(r =>
+                {
+                    person = r.Find(new PersonById(id));
+                });
+
+            if (person == null)
+                throw new HttpResponseException(HttpStatusCode.BadRequest);
+
+            return person;
         }
 
-        // POST api/<controller>
-        public void Post([FromBody]string value)
+        public int Post([FromBody]Person person)
         {
+            _repositoryFactory.WithRepository(r =>
+                {
+                    r.Context.Add(person);
+                    r.Context.Commit();
+                });
+
+            return person.Id;
         }
 
-        // PUT api/<controller>/5
-        public void Put(int id, [FromBody]string value)
+        public void Put(int id, [FromBody]Person person)
         {
+            _repositoryFactory.WithRepository(r =>
+                {
+                    var current = r.Find(new PersonById(id));
+                    if(current == null)
+                        throw new HttpResponseException(HttpStatusCode.BadRequest);
+                    current.First = person.First;
+                    current.Last = person.Last;
+                    r.Context.Commit();
+                });
         }
 
-        // DELETE api/<controller>/5
         public void Delete(int id)
         {
+            _repositoryFactory.WithRepository(r=>r.Execute(new DeletePerson(id)));
         }
-    }
-
-    public class Person
-    {
-        public int Id { get; set; }
-        public string First { get; set; }
-        public string Last { get; set; }
-        public string DoesThisCaseWell { get; set; }
-    }
+    }    
 }

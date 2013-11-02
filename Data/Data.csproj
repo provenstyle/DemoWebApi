@@ -76,7 +76,9 @@
     <Compile Include="Mappings\DataMappingConfiguration.cs" />
     <Compile Include="Mappings\PersonMapping.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Queries\AllPeople.cs" />
     <Compile Include="Queries\PeopleByFirstName.cs" />
+    <Compile Include="Queries\PersonById.cs" />
     <Compile Include="RepositoryFactory.cs" />
     <Compile Include="WebDataInstaller.cs" />
   </ItemGroup>
