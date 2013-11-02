@@ -33,8 +33,12 @@
     <Reference Include="Common.Logging">
       <HintPath>..\packages\Common.Logging.2.1.2\lib\net40\Common.Logging.dll</HintPath>
     </Reference>
-    <Reference Include="Highway.Data">
-      <HintPath>..\packages\Highway.Data.4.0.5.1\lib\net40\Highway.Data.dll</HintPath>
+    <Reference Include="Highway.Data, Version=4.1.0.2, Culture=neutral, PublicKeyToken=fe803c9600455796, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\packages\Highway.Data.4.1.0.2\lib\net40\Highway.Data.dll</HintPath>
+    </Reference>
+    <Reference Include="Highway.Pavement">
+      <HintPath>..\packages\Highway.Pavement.0.3.0.0\lib\net40\Highway.Pavement.dll</HintPath>
     </Reference>
     <Reference Include="Machine.Specifications">
       <HintPath>..\packages\Machine.Specifications.0.5.16\lib\net40\Machine.Specifications.dll</HintPath>

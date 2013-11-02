@@ -1,10 +1,18 @@
 ﻿using System.Collections.Generic;
 using System.Web.Http;
+using ProvenStyle.DemoWebApi.Data;
 
 namespace ProvenStyle.DemoWebApi.Controllers
 {
     public class PeopleController : ApiController
     {
+        private IRepositoryFactory _repositoryFactory;
+
+        public PeopleController(IRepositoryFactory repositoryFactory)
+        {
+            _repositoryFactory = repositoryFactory;
+        }
+
         // GET api/<controller>
         public IEnumerable<Person> Get()
         {
