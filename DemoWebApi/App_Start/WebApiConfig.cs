@@ -1,10 +1,7 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Web.Http;
+﻿using System.Web.Http;
 using Newtonsoft.Json.Serialization;
 
-namespace DemoWebApi
+namespace ProvenStyle.DemoWebApi.App_Start
 {
     public static class WebApiConfig
     {
