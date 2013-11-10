@@ -1,4 +1,4 @@
-define(['plugins/observable'], function(observable){
+define(['plugins/observable', ], function(observable){
 
 	var crudViewModel = function(itemConstructor, service, folder){
 		var createPath = "crud/create.html";
