@@ -1,0 +1,109 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<!--
+This file is used by the publish/package process of your Web project. You can customize the behavior of this process
+by editing this MSBuild file. In order to learn more about this please visit http://go.microsoft.com/fwlink/?LinkID=208121. 
+-->
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <TimeStampOfAssociatedLegacyPublishXmlFile />
+    <EncryptedPassword>AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAAqHSAG4Rp0kW/e30kLX7EzQAAAAACAAAAAAAQZgAAAAEAACAAAABKRsdv/c3fU9MiZR61JWrbwVlzCHY1DSPkfls5KwcpSwAAAAAOgAAAAAIAACAAAAAQ1OISoykFwtR6Ll5en/kT8S+UgmRhVh8Dp+8ZyKVCzRAAAAD0xEK4Y6mJAhLYa8UCd2ewQAAAADXujDbiiHRAhTEN/jKT0aoORLoRnfvsRZ7vAROaLZeMimXfmY7ArwqZCsHkceLC6W4I+zCzNc83Hvlu1IcyucU=</EncryptedPassword>
+  </PropertyGroup>
+  <ItemGroup>
+    <File Include="bin/Castle.Core.dll">
+      <publishTime>11/02/2013 10:33:58</publishTime>
+    </File>
+    <File Include="bin/Castle.Facilities.Logging.dll">
+      <publishTime>11/02/2013 10:33:59</publishTime>
+    </File>
+    <File Include="bin/Castle.Services.Logging.NLogIntegration.dll">
+      <publishTime>11/02/2013 10:33:59</publishTime>
+    </File>
+    <File Include="bin/Castle.Windsor.dll">
+      <publishTime>11/02/2013 10:04:31</publishTime>
+    </File>
+    <File Include="bin/Common.Logging.dll">
+      <publishTime>11/02/2013 10:04:31</publishTime>
+    </File>
+    <File Include="bin/EntityFramework.dll">
+      <publishTime>11/02/2013 15:21:36</publishTime>
+    </File>
+    <File Include="bin/Highway.Data.dll">
+      <publishTime>11/02/2013 10:33:58</publishTime>
+    </File>
+    <File Include="bin/Highway.Data.EntityFramework.dll">
+      <publishTime>11/02/2013 10:33:58</publishTime>
+    </File>
+    <File Include="bin/Highway.Pavement.dll">
+      <publishTime>11/02/2013 10:33:58</publishTime>
+    </File>
+    <File Include="bin/Microsoft.Practices.ServiceLocation.dll">
+      <publishTime>11/02/2013 10:04:31</publishTime>
+    </File>
+    <File Include="bin/Microsoft.Web.Infrastructure.dll">
+      <publishTime>11/02/2013 08:57:11</publishTime>
+    </File>
+    <File Include="bin/Microsoft.Web.Mvc.FixedDisplayModes.dll">
+      <publishTime>11/02/2013 08:57:13</publishTime>
+    </File>
+    <File Include="bin/Newtonsoft.Json.dll">
+      <publishTime>11/02/2013 08:57:09</publishTime>
+    </File>
+    <File Include="bin/NLog.dll">
+      <publishTime>11/02/2013 10:33:59</publishTime>
+    </File>
+    <File Include="bin/ProvenStyle.DemoWebApi.Data.dll">
+      <publishTime>11/02/2013 17:15:28</publishTime>
+    </File>
+    <File Include="bin/ProvenStyle.DemoWebApi.dll">
+      <publishTime>11/02/2013 17:15:29</publishTime>
+    </File>
+    <File Include="bin/ProvenStyle.DemoWebApi.Entities.dll">
+      <publishTime>11/02/2013 17:15:28</publishTime>
+    </File>
+    <File Include="bin/System.Net.Http.Formatting.dll">
+      <publishTime>11/02/2013 08:57:13</publishTime>
+    </File>
+    <File Include="bin/System.Web.Helpers.dll">
+      <publishTime>11/02/2013 08:57:12</publishTime>
+    </File>
+    <File Include="bin/System.Web.Http.dll">
+      <publishTime>11/02/2013 08:57:14</publishTime>
+    </File>
+    <File Include="bin/System.Web.Http.WebHost.dll">
+      <publishTime>11/02/2013 08:57:15</publishTime>
+    </File>
+    <File Include="bin/System.Web.Mvc.dll">
+      <publishTime>11/02/2013 08:57:13</publishTime>
+    </File>
+    <File Include="bin/System.Web.Razor.dll">
+      <publishTime>11/02/2013 08:57:11</publishTime>
+    </File>
+    <File Include="bin/System.Web.WebPages.Deployment.dll">
+      <publishTime>11/02/2013 08:57:12</publishTime>
+    </File>
+    <File Include="bin/System.Web.WebPages.dll">
+      <publishTime>11/02/2013 08:57:12</publishTime>
+    </File>
+    <File Include="bin/System.Web.WebPages.Razor.dll">
+      <publishTime>11/02/2013 08:57:12</publishTime>
+    </File>
+    <File Include="bin/WebActivator.dll">
+      <publishTime>11/02/2013 10:33:58</publishTime>
+    </File>
+    <File Include="Global.asax">
+      <publishTime>11/02/2013 10:09:10</publishTime>
+    </File>
+    <File Include="NLog.config">
+      <publishTime>11/02/2013 10:34:02</publishTime>
+    </File>
+    <File Include="packages.config">
+      <publishTime>11/02/2013 10:34:06</publishTime>
+    </File>
+    <File Include="Views/Web.config">
+      <publishTime>11/02/2013 08:56:49</publishTime>
+    </File>
+    <File Include="Web.config">
+      <publishTime>11/02/2013 17:23:10</publishTime>
+    </File>
+  </ItemGroup>
+</Project>
