@@ -1,4 +1,4 @@
-define([], function(){
+define(['plugins/observable'], function(observable){
 
 	var crudViewModel = function(itemConstructor, service, folder){
 		var createPath = folder + "/create.html";
@@ -18,8 +18,12 @@ define([], function(){
 		        .done(function (data) {
 		            
 		            vm.collection = data;
-		            if(data && data.length > 0)
+		            if (data && data.length > 0) {
 		                vm.selectedItem = vm.collection[0];
+		                vm.selectedView = readPath;
+		            } else {
+		                goToCreate();
+		            }
 		        });
 		};
 
@@ -77,15 +81,20 @@ define([], function(){
 			        .done(function() {
 			            var index = _.indexOf(vm.collection, item);
 			            vm.collection.splice(index, 1);
-			            if(vm.collection.length > 0)
-    			            vm.selectedItem = vm.collection[0];
-			            goToRead();
+			            if (vm.collection.length > 0) {
+			                vm.selectedItem = vm.collection[0];
+			                goToRead();
+			            } else {
+			                goToCreate()
+			            }
 			        })
 			        .fail(function() {
 			            alert('Failed to delete.');
 			        });
 			};
-		
+
+	    
+
 		return{
 			activate: activate,
 			vm:vm,
@@ -97,10 +106,9 @@ define([], function(){
 
 			create:create,
 			update: update,
-			deleteCurrent: deleteCurrent,
+			deleteCurrent: deleteCurrent
 		};
 	};
 
 	return crudViewModel;
-
 });

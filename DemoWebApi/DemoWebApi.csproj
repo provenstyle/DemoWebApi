@@ -176,14 +176,6 @@
     <Compile Include="App_Start\FilterConfig.cs" />
     <Compile Include="App_Start\RouteConfig.cs" />
     <Compile Include="App_Start\WebApiConfig.cs" />
-    <Content Include="App\crudTemplate\confirmDelete.html" />
-    <Content Include="App\crudTemplate\create.html" />
-    <Content Include="App\crudTemplate\display.html" />
-    <Content Include="App\crudTemplate\edit.html" />
-    <Content Include="App\crudTemplate\people.html" />
-    <Content Include="App\crudTemplate\people.js" />
-    <Content Include="App\crudTemplate\read.html" />
-    <Content Include="App\crudTemplate\update.html" />
     <Content Include="App\Domain\person.js" />
     <Content Include="App\main.js" />
     <Content Include="App\people\confirmDelete.html" />
@@ -194,7 +186,7 @@
     <Content Include="App\people\people.js" />
     <Content Include="App\people\read.html" />
     <Content Include="App\people\update.html" />
-    <Content Include="App\services\peopleService.js" />
+    <Content Include="App\services\crudDataService.js" />
     <Content Include="App\viewmodels\crudViewModel.js" />
     <Content Include="App\viewmodels\flickr.js" />
     <Content Include="App\viewmodels\shell.js" />

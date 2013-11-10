@@ -1,10 +1,11 @@
 define(function(require){
 	
-	var crudVM = require('viewmodels/crudViewModel');
-	var ctr = require('domain/person');
-	var service = require('services/peopleService');
-	var vm = new crudVM(ctr, service, "people"); 
+    var crudVm = require('viewmodels/crudViewModel');
+    var domainItemCtor = require('domain/person');
+    var dataService = require('services/crudDataService');
+    var service = new dataService("api/people");
+    var vm = new crudVm(domainItemCtor, service, "people");
 
-	return vm;
+    return vm;
 	
 });

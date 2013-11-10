@@ -2,5 +2,5 @@
 	<!-- ko compose:'people/edit.html'--><!--/ko-->
 
 	<button class="btn" data-bind="click:create">Create</button>
-	<button class="btn" data-bind="click:goToRead">Cancel</button>
+	<button class="btn" data-bind="enable: vm.collection.length > 0, click:goToRead">Cancel</button>
 </div>
