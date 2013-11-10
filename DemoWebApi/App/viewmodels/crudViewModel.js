@@ -5,6 +5,8 @@ define(['plugins/observable'], function(observable){
 		var readPath = folder + "/read.html";
 		var updatePath = folder + "/update.html";
 		var deletePath = folder + "/confirmDelete.html";
+		var displayPath = folder + "/display.html";
+		var editPath = folder + "/edit.html";
 
 		var vm = {
 			selectedView: readPath,
@@ -97,7 +99,11 @@ define(['plugins/observable'], function(observable){
 
 		return{
 			activate: activate,
-			vm:vm,
+			vm: vm,
+			
+			displayPath: displayPath,
+			editPath:editPath,
+
 			goToCreate: goToCreate,
 			goToUpdate: goToUpdate,
 			goToRead: goToRead,

@@ -1,0 +1,6 @@
+2013-11-09 13:40:36.2515|INFO|Default|Application Startup Completed
+2013-11-09 13:41:42.4311|INFO|Default|Application Startup Completed
+2013-11-09 18:34:57.4822|INFO|Default|Application Shutdown
+2013-11-09 18:38:44.8119|INFO|Default|Application Startup Completed
+2013-11-09 18:43:01.1536|INFO|Default|Application Shutdown
+2013-11-09 18:43:13.7609|INFO|Default|Application Startup Completed
