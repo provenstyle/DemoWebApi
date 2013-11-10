@@ -1,6 +1,12 @@
 define(['plugins/observable', ], function(observable){
 
-	var crudViewModel = function(itemConstructor, service, folder){
+    var crudViewModel = function (args) {
+
+        var itemConstructor = args.itemConstructor;
+        var service = args.dataService;
+        var folder = args.folderPath;
+        var heading = args.heading;
+
 		var createPath = "crud/create.html";
 		var readPath = "crud/read.html";
 		var updatePath = "crud/update.html";
@@ -101,6 +107,8 @@ define(['plugins/observable', ], function(observable){
 			activate: activate,
 			vm: vm,
 			
+			heading: heading,
+
 			displayPath: displayPath,
 			editPath:editPath,
 
