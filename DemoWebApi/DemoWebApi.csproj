@@ -178,16 +178,16 @@
     <Compile Include="App_Start\WebApiConfig.cs" />
     <Content Include="App\Domain\person.js" />
     <Content Include="App\main.js" />
-    <Content Include="App\people\confirmDelete.html" />
-    <Content Include="App\people\create.html" />
+    <Content Include="App\crud\confirmDelete.html" />
+    <Content Include="App\crud\create.html" />
     <Content Include="App\people\display.html" />
     <Content Include="App\people\edit.html" />
     <Content Include="App\people\people.html" />
     <Content Include="App\people\people.js" />
-    <Content Include="App\people\read.html" />
-    <Content Include="App\people\update.html" />
-    <Content Include="App\services\crudDataService.js" />
-    <Content Include="App\viewmodels\crudViewModel.js" />
+    <Content Include="App\crud\read.html" />
+    <Content Include="App\crud\update.html" />
+    <Content Include="App\crud\crudDataService.js" />
+    <Content Include="App\crud\crudViewModel.js" />
     <Content Include="App\viewmodels\flickr.js" />
     <Content Include="App\viewmodels\shell.js" />
     <Content Include="App\viewmodels\welcome.js" />
@@ -263,6 +263,7 @@
     <Content Include="Scripts\underscore.min.map" />
   </ItemGroup>
   <ItemGroup>
+    <Folder Include="App\services\" />
     <Folder Include="App_Data\" />
     <Folder Include="Models\" />
   </ItemGroup>

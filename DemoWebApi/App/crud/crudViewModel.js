@@ -1,10 +1,10 @@
 define(['plugins/observable'], function(observable){
 
 	var crudViewModel = function(itemConstructor, service, folder){
-		var createPath = folder + "/create.html";
-		var readPath = folder + "/read.html";
-		var updatePath = folder + "/update.html";
-		var deletePath = folder + "/confirmDelete.html";
+		var createPath = "crud/create.html";
+		var readPath = "crud/read.html";
+		var updatePath = "crud/update.html";
+		var deletePath = "crud/confirmDelete.html";
 		var displayPath = folder + "/display.html";
 		var editPath = folder + "/edit.html";
 
