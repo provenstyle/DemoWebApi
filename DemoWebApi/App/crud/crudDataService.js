@@ -41,10 +41,10 @@ define([], function() {
 
                 return $.ajax(args);
 
-            },
-            map = function(source, destination) {
-                destination.first = source.first;
-                destination.last = source.last;
+            };
+            function map(source, destination) {
+                for (var property in source)
+                    destination[property] = source[property];
             };
 
         return {
