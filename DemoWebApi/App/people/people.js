@@ -1,8 +1,8 @@
-define(['domain/person', 'crud/crudDataService', 'crud/crudViewModel'], function (Person, CrudService, Vm) {
+define(['domain/person', 'crud/crudViewModel'], function (Person, Vm) {
 
     var args = {
         itemConstructor: Person,
-        dataService: new CrudService('api/people'),
+        dataUrl: 'api/people',
         folderPath: 'people',
         heading: 'People'
     };

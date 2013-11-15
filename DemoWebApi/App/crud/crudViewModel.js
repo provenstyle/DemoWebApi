@@ -1,9 +1,9 @@
-define(function(){
+define(['crud/crudDataService'],function(dataService){
 
     var crudViewModel = function (args) {
 
         var itemConstructor = args.itemConstructor;
-        var service = args.dataService;
+        var service = new dataService(args.dataUrl);
         var folder = args.folderPath;
         var heading = args.heading;
 
