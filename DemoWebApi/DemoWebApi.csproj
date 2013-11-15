@@ -182,6 +182,8 @@
     <Content Include="App\crud\create.html" />
     <Content Include="App\people\display.html" />
     <Content Include="App\people\edit.html" />
+    <Content Include="App\people\listItem.html" />
+    <Content Include="App\crud\crudView.html" />
     <Content Include="App\people\people.html" />
     <Content Include="App\people\people.js" />
     <Content Include="App\crud\read.html" />
@@ -304,7 +306,7 @@
           <AutoAssignPort>True</AutoAssignPort>
           <DevelopmentServerPort>53994</DevelopmentServerPort>
           <DevelopmentServerVPath>/</DevelopmentServerVPath>
-          <IISUrl>http://localhost:49285/</IISUrl>
+          <IISUrl>http://localhost:3000/</IISUrl>
           <NTLMAuthentication>False</NTLMAuthentication>
           <UseCustomServer>False</UseCustomServer>
           <CustomServerUrl>

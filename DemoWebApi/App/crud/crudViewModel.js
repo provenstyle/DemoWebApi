@@ -1,4 +1,4 @@
-define(['plugins/observable', ], function(observable){
+define(function(){
 
     var crudViewModel = function (args) {
 
@@ -13,6 +13,7 @@ define(['plugins/observable', ], function(observable){
 		var deletePath = "crud/confirmDelete.html";
 		var displayPath = folder + "/display.html";
 		var editPath = folder + "/edit.html";
+        var listItemPath = folder + "/listItem.html";
 
 		var vm = {
 			selectedView: readPath,
@@ -93,7 +94,7 @@ define(['plugins/observable', ], function(observable){
 			                vm.selectedItem = vm.collection[0];
 			                goToRead();
 			            } else {
-			                goToCreate()
+			                goToCreate();
 			            }
 			        })
 			        .fail(function() {
@@ -110,7 +111,8 @@ define(['plugins/observable', ], function(observable){
 			heading: heading,
 
 			displayPath: displayPath,
-			editPath:editPath,
+			editPath: editPath,
+			listItemPath: listItemPath,
 
 			goToCreate: goToCreate,
 			goToUpdate: goToUpdate,

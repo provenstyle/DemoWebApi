@@ -1,0 +1,16 @@
+<div>
+	<h2 data-bind="text: heading"></h2>
+	<hr/>
+
+	<div class="sidebar">
+		<button class="btn" data-bind="click:goToCreate">Add New</button>
+		<ul data-bind="foreach:vm.collection">
+		    <li data-bind="click: $parent.selectCurrent">
+	            <!-- ko compose:$parent.listItemPath--><!--/ko-->		        		        
+		    </li>
+		</ul>
+	</div>
+	<div class="main">		
+    	<div data-bind="compose: vm.selectedView"></div>
+	</div>
+</div>

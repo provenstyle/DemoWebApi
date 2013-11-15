@@ -15,3 +15,4 @@ _ReSharper.*
 *.ncrunchproject
 *.ncrunchsolution.user
 *.orig
+*/logs
