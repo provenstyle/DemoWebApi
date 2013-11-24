@@ -63,6 +63,8 @@ namespace ProvenStyle.DemoWebApi.Controllers
                         throw new HttpResponseException(HttpStatusCode.BadRequest);
                     current.First = person.First;
                     current.Last = person.Last;
+                    current.Email = person.Email;
+                    current.Phone = person.Phone;
                     r.Context.Commit();
                 });
         }

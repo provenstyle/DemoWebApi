@@ -1,9 +1,11 @@
 define([], function(){
 	
-	var person = function(first, last){
+	var person = function(){
 		this.id = -1;
-		this.first = first || "";
-		this.last = last || "";
+		this.first = "";
+		this.last = "";
+		this.email = "";
+	    this.phone = "";
 	};
 
 	return person;

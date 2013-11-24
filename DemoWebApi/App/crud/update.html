@@ -1,4 +1,4 @@
-<div class="crud">
+<div class="crud autoclose">
 
 	<!-- ko compose:editPath--><!--/ko-->
     
@@ -7,8 +7,8 @@
             <button class="btn btn-primary" data-bind="click: update">Save</button>
             <button class="btn" data-bind="click: cancel">Cancel</button>        
         </div>
-        <div class="pull-left">
-            <button class="btn btn-danger" data-bind="click: confirmDelete">Delete</button>    
+        <div class="delete pull-left">
+            <a data-bind="click: confirmDelete">Delete...</a>    
         </div>
     </div>
     

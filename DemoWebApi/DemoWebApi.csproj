@@ -179,7 +179,6 @@
     <Content Include="App\Domain\person.js" />
     <Content Include="App\main.js" />
     <Content Include="App\crud\create.html" />
-    <Content Include="App\people\display.html" />
     <Content Include="App\people\edit.html" />
     <Content Include="App\people\listItem.html" />
     <Content Include="App\crud\crudView.html" />

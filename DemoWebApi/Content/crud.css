@@ -41,3 +41,11 @@
 .modalHost .crud .footer {
     min-height: 30px;
 }
+
+.modalHost .crud div.delete {
+    padding-top: 15px;
+}
+
+.modalHost .crud .delete a {
+    color: #aaa;
+}
