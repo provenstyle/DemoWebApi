@@ -25,3 +25,7 @@ body {
 .data-list ul li button {
     float: right
 }
+
+.people {
+    margin-top: 10px;    
+}

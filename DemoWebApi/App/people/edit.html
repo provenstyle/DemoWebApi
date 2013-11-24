@@ -1,7 +1,16 @@
-<form>
-	<label>First</label>
-	<input type="text" class="autofocus" data-bind="value: vm.updateItem.first">
+<form class="form-horizontal">
+    <div class="control-group">
+        <label class="control-label" for="first">First</label>
+        <div class="controls">
+            <input type="text" id="first" class="autofocus" placeholder="first name" data-bind="value: vm.updateItem.first">        
+        </div>
+    </div>
 
-	<label>Last</label>
-	<input type="text" data-bind="value: vm.updateItem.last">
+    <div class="control-group">
+        <label class="control-label" for="last">Last</label>
+        <div class="controls">
+            <input type="text" id="last" placeholder="last name" data-bind="value: vm.updateItem.last"/>        
+        </div>
+    </div>    
+        
 </form>
