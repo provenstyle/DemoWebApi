@@ -36,6 +36,8 @@
     -webkit-border-radius: 6px;
     -moz-border-radius: 6px;
     border-radius: 6px;
+    border: 1px solid #999
+
 }
 
 .modalHost .crud .footer {

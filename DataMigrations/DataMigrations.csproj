@@ -86,6 +86,18 @@
     <Compile Include="Migrations\201311241741331_course.Designer.cs">
       <DependentUpon>201311241741331_course.cs</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\201311241927576_instructor.cs" />
+    <Compile Include="Migrations\201311241927576_instructor.Designer.cs">
+      <DependentUpon>201311241927576_instructor.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201311241953473_instructor2.cs" />
+    <Compile Include="Migrations\201311241953473_instructor2.Designer.cs">
+      <DependentUpon>201311241953473_instructor2.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201311242000397_removingPerson.cs" />
+    <Compile Include="Migrations\201311242000397_removingPerson.Designer.cs">
+      <DependentUpon>201311242000397_removingPerson.cs</DependentUpon>
+    </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
@@ -115,6 +127,15 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Migrations\201311241741331_course.resx">
       <DependentUpon>201311241741331_course.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201311241927576_instructor.resx">
+      <DependentUpon>201311241927576_instructor.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201311241953473_instructor2.resx">
+      <DependentUpon>201311241953473_instructor2.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201311242000397_removingPerson.resx">
+      <DependentUpon>201311242000397_removingPerson.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

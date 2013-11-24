@@ -158,9 +158,9 @@
     <Compile Include="App_Start\IoC.cs" />
     <Compile Include="App_Start\LoggerAnnouncementsWireup.cs" />
     <Compile Include="BaseTypes\BaseLoggingController.cs" />
+    <Compile Include="Controllers\InstructorsController.cs" />
     <Compile Include="Controllers\CoursesController.cs" />
-    <Compile Include="Controllers\DurandalController.cs" />
-    <Compile Include="Controllers\PeopleController.cs" />
+    <Compile Include="Controllers\ImprovingUController.cs" />
     <Compile Include="Filters\ExceptionLoggingFilter.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
@@ -181,15 +181,15 @@
     <Content Include="App\courses\listItem.html" />
     <Content Include="App\courses\courses.js" />
     <Content Include="App\courses\edit.html" />
+    <Content Include="App\Domain\instructor.js" />
     <Content Include="App\Domain\course.js" />
-    <Content Include="App\Domain\person.js" />
+    <Content Include="App\instructors\edit.html" />
+    <Content Include="App\instructors\listItem.html" />
+    <Content Include="App\instructors\instructors.html" />
+    <Content Include="App\instructors\instructors.js" />
     <Content Include="App\main.js" />
     <Content Include="App\crud\create.html" />
-    <Content Include="App\people\edit.html" />
-    <Content Include="App\people\listItem.html" />
     <Content Include="App\crud\crudView.html" />
-    <Content Include="App\people\people.html" />
-    <Content Include="App\people\people.js" />
     <Content Include="App\crud\update.html" />
     <Content Include="App\crud\crudDataService.js" />
     <Content Include="App\crud\crudViewModel.js" />
@@ -262,8 +262,8 @@
     </Content>
     <Content Include="Views\Web.config" />
     <Content Include="Scripts\jquery-1.9.1.min.map" />
-    <Content Include="Views\Durandal\Index.cshtml" />
-    <Content Include="Views\Durandal\_splash.cshtml" />
+    <Content Include="Views\ImprovingU\Index.cshtml" />
+    <Content Include="Views\ImprovingU\_splash.cshtml" />
     <Content Include="Scripts\underscore.min.map" />
   </ItemGroup>
   <ItemGroup>

@@ -68,19 +68,15 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Commands\DeleteInstructor.cs" />
     <Compile Include="Commands\DeleteCourse.cs" />
-    <Compile Include="Commands\DeletePerson.cs" />
     <Compile Include="Commands\DeletePersonAdvancedCommand.cs" />
     <Compile Include="DatabaseManager.cs" />
     <Compile Include="DataInstaller.cs" />
     <Compile Include="IRepositoryFactory.cs" />
     <Compile Include="Mappings\CourseMapping.cs" />
     <Compile Include="Mappings\DataMappingConfiguration.cs" />
-    <Compile Include="Mappings\PersonMapping.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="Queries\AllPeople.cs" />
-    <Compile Include="Queries\PeopleByFirstName.cs" />
-    <Compile Include="Queries\PersonById.cs" />
     <Compile Include="RepositoryFactory.cs" />
     <Compile Include="WebDataInstaller.cs" />
   </ItemGroup>
@@ -93,6 +89,9 @@
       <Project>{6ee3b8ef-6218-49a5-ad09-c2e31103c00f}</Project>
       <Name>Entities</Name>
     </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Queries\" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

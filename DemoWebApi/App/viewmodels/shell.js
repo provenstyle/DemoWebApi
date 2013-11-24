@@ -9,8 +9,10 @@
         activate: function () {
             router.map([
                 { route: ['Courses', ''], moduleId: 'courses/courses', nav: true },
-                { route: 'Students', moduleId: 'people/people', nav: true }
-            ]).buildNavigationModel();
+                { route: 'Instructors', moduleId: 'instructors/instructors', nav: true }
+            ])
+                .mapUnknownRoutes('courses/courses', '#Courses')
+                .buildNavigationModel();
             
             return router.activate();
         }

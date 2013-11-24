@@ -13,6 +13,14 @@ body {
     
 }
 
+.navbar .brand {
+    padding: 0 10px 0 15px;
+}
+
+.brand img {
+    height: 40px;
+}
+
 .data-list ul {
     list-style: none;
     display: block;
@@ -26,11 +34,11 @@ body {
     float: right
 }
 
-.people {
+.people, .instructors {
     margin-top: 10px;    
 }
 
-.people span {
+.people span, .instructors span{
     margin-right: 20px;
 }
 

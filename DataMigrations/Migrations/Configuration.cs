@@ -30,11 +30,6 @@ namespace ProvenStyle.DemoWebApi.DataMigrations.Migrations
 
         private static void SeedPersonData(MigrationsDataContext context)
         {
-            context.Add(new Person("Richard", "Castle"));
-            context.Add(new Person("Kate", "Becket"));
-            context.Add(new Person("Nikki", "Heat"));
-            context.Add(new Person("Derrick", "Storm"));
-            context.Add(new Person("Richard", "Nixon"));
             context.Commit();
         }
     }

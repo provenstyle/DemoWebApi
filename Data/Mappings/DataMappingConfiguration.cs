@@ -8,8 +8,8 @@ namespace ProvenStyle.DemoWebApi.Data
     {
         public void ConfigureModelBuilder(DbModelBuilder modelBuilder)
         {
-            modelBuilder.Configurations.Add(new PersonMapping());
             modelBuilder.Entity<Course>();
+            modelBuilder.Entity<Instructor>();
         }
     }
 }
