@@ -178,7 +178,6 @@
     <Compile Include="App_Start\WebApiConfig.cs" />
     <Content Include="App\Domain\person.js" />
     <Content Include="App\main.js" />
-    <Content Include="App\crud\confirmDelete.html" />
     <Content Include="App\crud\create.html" />
     <Content Include="App\people\display.html" />
     <Content Include="App\people\edit.html" />
@@ -186,7 +185,6 @@
     <Content Include="App\crud\crudView.html" />
     <Content Include="App\people\people.html" />
     <Content Include="App\people\people.js" />
-    <Content Include="App\crud\read.html" />
     <Content Include="App\crud\update.html" />
     <Content Include="App\crud\crudDataService.js" />
     <Content Include="App\crud\crudViewModel.js" />
@@ -200,6 +198,7 @@
     <Content Include="Content\bootstrap-responsive.min.css" />
     <Content Include="Content\bootstrap.css" />
     <Content Include="Content\bootstrap.min.css" />
+    <Content Include="Content\crud.css" />
     <Content Include="Content\durandal.css" />
     <Content Include="Content\font-awesome-ie7.css" />
     <Content Include="Content\font-awesome-ie7.min.css" />

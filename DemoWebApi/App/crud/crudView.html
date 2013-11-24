@@ -1,16 +1,20 @@
-<div>
-	<h2 data-bind="text: heading"></h2>
-	<hr/>
+<div class="crud">
+    <header>
+        <span class="heading" data-bind="text: heading"></span>
+        <button class="btn btn-success" data-bind="click: goToCreate">New</button>    
+    </header>
+        
+    <ul data-bind="foreach:vm.collection">
+        <li>
+                <div class="row-fluid">
+                    <div class="span11">
+                        <!-- ko compose:$parent.listItemPath--><!--/ko-->	                        
+                    </div>
+                    <div class="span1">
+                        <button class="btn edit" data-bind="click: $parent.selectCurrent">Edit</button>	        		        
+                    </div>
+                </div>
+        </li>
+    </ul>
 
-	<div class="sidebar">
-		<button class="btn" data-bind="click:goToCreate">Add New</button>
-		<ul data-bind="foreach:vm.collection">
-		    <li data-bind="click: $parent.selectCurrent">
-	            <!-- ko compose:$parent.listItemPath--><!--/ko-->		        		        
-		    </li>
-		</ul>
-	</div>
-	<div class="main">		
-    	<div data-bind="compose: vm.selectedView"></div>
-	</div>
 </div>

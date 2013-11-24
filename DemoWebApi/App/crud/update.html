@@ -1,7 +1,15 @@
-<div>
+<div class="crud">
 
 	<!-- ko compose:editPath--><!--/ko-->
-
-	<button class="btn" data-bind="click:update">Save</button>
-	<button class="btn" data-bind="click:goToRead">Cancel</button>
+    
+    <div class="footer">
+        <div class="pull-right">
+            <button class="btn btn-primary" data-bind="click: update">Save</button>
+            <button class="btn" data-bind="click: cancel">Cancel</button>        
+        </div>
+        <div class="pull-left">
+            <button class="btn btn-danger" data-bind="click: confirmDelete">Delete</button>    
+        </div>
+    </div>
+    
 </div>

@@ -8,8 +8,7 @@
         },
         activate: function () {
             router.map([
-                { route: '', title:'Welcome', moduleId: 'viewmodels/welcome', nav: true },
-                { route: 'people', moduleId: 'people/people', nav: true }
+                { route: ['students', ''], moduleId: 'people/people', nav: true }
             ]).buildNavigationModel();
             
             return router.activate();

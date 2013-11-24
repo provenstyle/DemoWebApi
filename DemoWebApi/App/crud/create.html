@@ -1,6 +1,9 @@
-<div>
+<div class="crud">
 	<!-- ko compose:editPath--><!--/ko-->
-
-	<button class="btn" data-bind="click:create">Create</button>
-	<button class="btn" data-bind="enable: vm.collection.length > 0, click:goToRead">Cancel</button>
+    <div class="footer">
+        <div class="pull-right">
+            <button class="btn btn-primary" data-bind="click:create">Create</button>
+            <button class="btn" data-bind="click:cancel">Cancel</button>
+        </div>
+    </div>
 </div>

@@ -1,12 +1,27 @@
 /*
-Most spectacular Css
+Most spectacular css
 */
 
-.sidebar{
-	float:left;
-	width: 200px;
+body {
+    width: 960px;
+    margin: auto;
 }
 
-.main{
-	margin-left: 200px;
+.navbar {
+    width: 960px;
+    margin: auto;
+    
+}
+
+.data-list ul {
+    list-style: none;
+    display: block;
+}
+
+.data-list li {
+    clear: both
+}
+
+.data-list ul li button {
+    float: right
 }

@@ -23,6 +23,7 @@ namespace ProvenStyle.DemoWebApi {
 		  .Include("~/Content/durandal.css")
           .Include("~/Content/starterkit.css")
           .Include("~/Content/app.css")
+          .Include("~/Content/crud.css")
         );
     }
 
