@@ -158,6 +158,7 @@
     <Compile Include="App_Start\IoC.cs" />
     <Compile Include="App_Start\LoggerAnnouncementsWireup.cs" />
     <Compile Include="BaseTypes\BaseLoggingController.cs" />
+    <Compile Include="Controllers\CoursesController.cs" />
     <Compile Include="Controllers\DurandalController.cs" />
     <Compile Include="Controllers\PeopleController.cs" />
     <Compile Include="Filters\ExceptionLoggingFilter.cs" />
@@ -176,6 +177,11 @@
     <Compile Include="App_Start\FilterConfig.cs" />
     <Compile Include="App_Start\RouteConfig.cs" />
     <Compile Include="App_Start\WebApiConfig.cs" />
+    <Content Include="App\courses\courses.html" />
+    <Content Include="App\courses\listItem.html" />
+    <Content Include="App\courses\courses.js" />
+    <Content Include="App\courses\edit.html" />
+    <Content Include="App\Domain\course.js" />
     <Content Include="App\Domain\person.js" />
     <Content Include="App\main.js" />
     <Content Include="App\crud\create.html" />

@@ -31,7 +31,7 @@ define(function(require) {
     system.debug(true);
     //>>excludeEnd("build");
 
-    app.title = 'Durandal Starter Kit';
+    app.title = 'Improving U';
 
     app.configurePlugins({
         observable: true,

@@ -33,3 +33,12 @@ body {
 .people span {
     margin-right: 20px;
 }
+
+.courses p {
+    margin-left: 20px;
+}
+
+.courses textarea {
+    min-width:400px;
+    
+}

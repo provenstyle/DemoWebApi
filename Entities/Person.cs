@@ -1,6 +1,8 @@
-﻿namespace ProvenStyle.DemoWebApi.Entities
+﻿using Highway.Data.PrebuiltQueries;
+
+namespace ProvenStyle.DemoWebApi.Entities
 {
-    public class Person
+    public class Person : IIdentifiable<int>
     {
         public int Id { get; set; }
         public string First { get; set; }

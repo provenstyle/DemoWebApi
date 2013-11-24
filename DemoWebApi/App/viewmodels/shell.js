@@ -8,7 +8,8 @@
         },
         activate: function () {
             router.map([
-                { route: ['students', ''], moduleId: 'people/people', nav: true }
+                { route: ['Courses', ''], moduleId: 'courses/courses', nav: true },
+                { route: 'Students', moduleId: 'people/people', nav: true }
             ]).buildNavigationModel();
             
             return router.activate();
