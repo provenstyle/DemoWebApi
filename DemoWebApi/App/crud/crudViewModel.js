@@ -132,7 +132,8 @@ define(['crud/crudDataService', 'plugins/dialog'],function(dataService, dialog){
 
 			create:create,
 			update: update,
-			deleteCurrent: deleteCurrent
+			deleteCurrent: deleteCurrent,
+		    viewUrl:'crud/crudView.html'
 		};
 	};
 
